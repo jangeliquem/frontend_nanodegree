@@ -1,20 +1,19 @@
 Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
 
-Avoid landing page redirects
+*Avoid landing page redirects
 Your page has no redirects. Learn more about avoiding landing page redirects.
-Eliminate render-blocking JavaScript and CSS in above-the-fold content
+*Eliminate render-blocking JavaScript and CSS in above-the-fold content
 You have no render-blocking resources. Learn more about removing render-blocking resources.
-Enable compression
+*Enable compression
 You have compression enabled. Learn more about enabling compression.
-Minify CSS
+*Minify CSS
 Your CSS is minified. Learn more about minifying CSS.
-Minify JavaScript
+*Minify JavaScript
 Your JavaScript content is minified. Learn more about minifying JavaScript.
-Prioritize visible content
+*Prioritize visible content
 You have the above-the-fold content properly prioritized. Learn more about prioritizing visible content.
-Reduce server response time
+*Reduce server response time
 Your server responded quickly. Learn more about server response time optimization.
-Download optimized image, JavaScript, and CSS resources for this page.
 
 All steps required to successfully run the application are either below from the original README file or in comments in the files themselves. 
 
