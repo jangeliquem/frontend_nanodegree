@@ -1,3 +1,23 @@
+Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
+
+Avoid landing page redirects
+Your page has no redirects. Learn more about avoiding landing page redirects.
+Eliminate render-blocking JavaScript and CSS in above-the-fold content
+You have no render-blocking resources. Learn more about removing render-blocking resources.
+Enable compression
+You have compression enabled. Learn more about enabling compression.
+Minify CSS
+Your CSS is minified. Learn more about minifying CSS.
+Minify JavaScript
+Your JavaScript content is minified. Learn more about minifying JavaScript.
+Prioritize visible content
+You have the above-the-fold content properly prioritized. Learn more about prioritizing visible content.
+Reduce server response time
+Your server responded quickly. Learn more about server response time optimization.
+Download optimized image, JavaScript, and CSS resources for this page.
+
+All steps required to successfully run the application are either below from the original README file or in comments in the files themselves. 
+
 ## Website Performance Optimization portfolio project
 
 ...optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
