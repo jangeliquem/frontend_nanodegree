@@ -485,9 +485,9 @@ var resizePizzas = function(size) {
     //Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
     function changePizzaSizes(size) {
         for (var i = 0; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
-            var dx = determineDx(document.getElementByClassName("randomPizzaContainer")[i], size);
-            var newwidth = (document.getElementByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-            document.getElementByClassName("randomPizzaContainer")[i].style.width = newwidth;
+            var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+            var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+            document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
         }
     }
 
