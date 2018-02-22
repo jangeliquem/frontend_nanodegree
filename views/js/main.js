@@ -564,6 +564,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
+    var movingPizzas = document.getElementById("movingPizzas1");
     for (var i = 0; i < 200; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
@@ -577,6 +578,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //         Changed querySelector to getElementById to be faster
 //         Moved the DOM call outside the for statement and save it into a local variable
 //         but kept .appendChild(elem) inside loop;
-    var movingPizzas = document.getElementById("movingPizzas1");
+    
     updatePositions();
 });
