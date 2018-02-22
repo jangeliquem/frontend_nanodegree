@@ -480,13 +480,15 @@ var resizePizzas = function(size) {
 //         // Requires script name as input
 //         var myWorker = new Worker("worker.js");
 //     }
-
     // Iterates through pizza elements on the page and changes their widths
     //Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
+    //Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var container = document.getElementsByClassName('randomPizzaContainer')), so the DOM is not explicitly touched in every iteration!
     function changePizzaSizes(size) {
-        for (var i = 0; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
-            var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+        for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+            var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[i], size);
+            
             var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+            
             document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
         }
     }
