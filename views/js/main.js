@@ -570,9 +570,12 @@ document.addEventListener('DOMContentLoaded', function() {
         elem.style.height = "100px";
         elem.style.width = "73.333px";
         elem.basicLeft = (i % cols) * s;
-        elem.style.top = (Math.floor(i / cols) * s) + 'px';
-//         changed querySelector to getElementById to be faster
-        document.getElementById("movingPizzas1").appendChild(elem);
+        elem.style.top = (Math.floor(i / cols) * s) + 'px'; 
+        
     }
+    //         Changed querySelector to getElementById to be faster
+//         Moved the DOM call outside the for statement and save it into a local variable
+//         and so removed .appendChild(elem);
+    var movingPizzas = document.getElementById("movingPizzas1");
     updatePositions();
 });
