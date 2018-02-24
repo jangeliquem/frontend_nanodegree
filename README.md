@@ -1,4 +1,5 @@
 ## Optimizations made to main.js:
+* Moved scrollTop variable outside its for loop as all elements of the array uses the same value. 
 * Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
 * Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var randomPizzaContainer'), so the DOM is not explicitly touched in every iteration!
 * Changed querySelector to getElementById to be faster
