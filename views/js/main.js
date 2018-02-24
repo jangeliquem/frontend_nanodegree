@@ -482,8 +482,8 @@ var resizePizzas = function(size) {
 //     }
     // Iterates through pizza elements on the page and changes their widths
     //Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
-    //Took newwidth and dx variables out the loop (by commenting)
-    //Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var container = document.getElementsByClassName('randomPizzaContainer')), so the DOM is not explicitly touched in every iteration!
+    //Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var randomPizzaContainer'), 
+    //so the DOM is not explicitly touched in every iteration!
     var randomPizzaContainer =  document.getElementsByClassName('randomPizzaContainer');
  
     
