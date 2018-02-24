@@ -1,10 +1,10 @@
-Optimizations made to main.js:
- *Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
-    *Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var randomPizzaContainer'), so the DOM is not explicitly touched in every iteration!
-   *Changed querySelector to getElementById to be faster
+###Optimizations made to main.js:
+*Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
+*Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var randomPizzaContainer'), so the DOM is not explicitly touched in every iteration!
+*Changed querySelector to getElementById to be faster
 *Moved the DOM call outside the for statement and save it into a local variable but kept .appendChild(elem) inside loop;
 
-Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
+###Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
 
 *Avoid landing page redirects
 Your page has no redirects. Learn more about avoiding landing page redirects.
@@ -21,7 +21,7 @@ You have the above-the-fold content properly prioritized. Learn more about prior
 *Reduce server response time
 Your server responded quickly. Learn more about server response time optimization.
 
-All steps required to successfully run the application are either below from the original README file or in comments in the files themselves. 
+###All steps required to successfully run the application are either below from the original README file or in comments in the files themselves. 
 
 ## Website Performance Optimization portfolio project
 
