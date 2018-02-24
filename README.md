@@ -7,6 +7,7 @@
 
 ## Optimizations to pizza.html:
 * restored styles.css name to just style.css (singular s). 
+* To prevent Error: GET [...] style.css, commented out style.css link tag per this resource (https://github.com/johnpapa/angular-tour-of-heroes/issues/115) that said: "With the latest version of the angular cli, you no longer have to include the <link rel="stylesheet"...> in the index.html file. The cli will inject the contents automatically."
 
 ## Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
 
