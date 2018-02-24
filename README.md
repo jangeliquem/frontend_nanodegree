@@ -1,3 +1,9 @@
+Optimizations made to main.js:
+ *Changed to the faster document.getElementsByClassName() Web API call instead of document.querySelectorAll()
+    *Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var randomPizzaContainer'), so the DOM is not explicitly touched in every iteration!
+   *Changed querySelector to getElementById to be faster
+*Moved the DOM call outside the for statement and save it into a local variable but kept .appendChild(elem) inside loop;
+
 Per PageSpeed Result, Optimizations made in index.html and views/js/main.js for pizza.html:
 
 *Avoid landing page redirects
