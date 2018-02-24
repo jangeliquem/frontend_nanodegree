@@ -486,12 +486,13 @@ var resizePizzas = function(size) {
     //Created a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var container = document.getElementsByClassName('randomPizzaContainer')), so the DOM is not explicitly touched in every iteration!
     var randomPizzaContainer =  document.getElementsByClassName('randomPizzaContainer');
  
-    var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+    
     function changePizzaSizes(size) {
 //         moved newwidth and dx veriables out of the loop
         
         for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
             var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[i], size);
+            var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
             randomPizzaContainer[i].style.width = newwidth;
 //             document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
         }
